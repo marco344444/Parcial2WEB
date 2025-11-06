@@ -1,0 +1,291 @@
+[
+  {
+    "id": "1",
+    "title": "Presentación: VIZLA - Módulo de correo en la nube",
+    "summary": "El grupo VIZLA presentó su plataforma destacando mejoras en comunicación y avances técnicos.",
+    "content": "Durante su exposición mencionaron las dificultades en los despliegues del primer sprint y la pérdida de miembros del equipo. A pesar de los inconvenientes, lograron completar cerca del 80% del proyecto y mostraron avances del módulo de correo en la nube. Los docentes señalaron que, aunque se evidenció aprendizaje, el producto final no reflejó el porcentaje reportado.",
+    "images": ["/images/IMG_2943.webp"],
+    "date": "2025-10-28",
+    "presenters": ["Equipo VIZLA"],
+    "details": "Jornada 1 - The Nexus Battles IV. Críticas sobre la falta de producto funcional, pero reconocimiento al esfuerzo de adaptación del grupo.",
+    "tags": ["nube", "correo", "equipo", "sprint", "comunicación"]
+  },
+  {
+    "id": "2",
+    "title": "Presentación: ELDAR - Sistema de gestión de épicas e inventario",
+    "summary": "El grupo ELDAR presentó un sistema de gestión de historias de usuario e inventario.",
+    "content": "El primer sprint se centró en la gestión de épicas, el segundo en el módulo de inventario y el tercero en la integración general del sistema. Lograron completar más del 90% de las historias asignadas, aunque los docentes observaron una sobreasignación de puntos y tareas con complejidad desigual.",
+    "images": ["/images/IMG_2944.webp", "/images/IMG_2945.webp", "/images/IMG_2946.webp", "/images/IMG_2947.webp", "/images/IMG_2948.webp", "/images/IMG_2949.webp", "/images/IMG_2950.webp", "/images/IMG_2951.webp"],
+    "date": "2025-10-28",
+    "presenters": ["Equipo ELDAR"],
+    "details": "Jornada 1 - The Nexus Battles IV. Se destacó el cumplimiento y la organización del equipo, con observaciones sobre la distribución de esfuerzos.",
+    "tags": ["gestión", "épicas", "inventario", "integración", "scrum"]
+  },
+  {
+    "id": "3",
+    "title": "Presentación: KRYZE - Plataforma de batallas en línea",
+    "summary": "El equipo KRYZE mostró su sistema de batallas y cálculos estadísticos para combates en línea.",
+    "content": "Durante los tres sprints desarrollaron la lógica de batallas, integración con otros módulos y funciones de valoración y comentarios. Emplearon modelos estadísticos para la aleatoriedad de resultados, aunque tuvieron dificultades de comunicación con otros grupos. Mostraron avances visuales del entorno de juego.",
+    "images": ["/images/IMG_2952.webp", "/images/IMG_2953.webp", "/images/IMG_2955.webp", "/images/IMG_2958.webp", "/images/IMG_2957.webp", "/images/IMG_2956.webp"],
+    "date": "2025-10-28",
+    "presenters": ["Equipo KRYZE"],
+    "details": "Jornada 1 - The Nexus Battles IV. Proyecto con enfoque matemático sólido, aunque afectado por problemas de coordinación intergrupal.",
+    "tags": ["batallas", "estadística", "juego", "valoración", "coordinación"]
+  },
+  {
+    "id": "4",
+    "title": "Presentación: ROOK - Módulo de subastas y chatbot",
+    "summary": "El grupo ROOK presentó los avances en el módulo de subastas y chatbot.",
+    "content": "Durante la exposición mencionaron el diseño del sistema de subastas y el desarrollo del chatbot para interacción entre usuarios. Mostraron la arquitectura base y discutieron los desafíos de integración entre ambos componentes.",
+  "images": ["/images/Default.webp"],
+    "date": "2025-10-28",
+    "presenters": ["Equipo ROOK"],
+    "details": "Jornada 1 - The Nexus Battles IV. Se valoró la iniciativa del grupo al combinar dos módulos complejos en una misma solución.",
+    "tags": ["subastas", "chatbot", "integración", "arquitectura"]
+  },
+  
+  {
+    "id": "6",
+    "title": "Presentación: ARRYN - E-commerce de productos tecnológicos",
+    "summary": "El grupo ARRYN presentó su plataforma de comercio electrónico con integración de múltiples tiendas.",
+    "content": "Su página web unifica la oferta de productos tecnológicos de diferentes proveedores. El grupo destacó haber cumplido todos los objetivos del segundo sprint y mostró una interfaz moderna orientada a la experiencia de usuario.",
+    "images": ["/images/IMG_2969.webp", "/images/IMG_2970.webp", "/images/IMG_2971.webp"],
+    "date": "2025-10-28",
+    "presenters": ["Equipo ARRYN"],
+    "details": "Jornada 1 - The Nexus Battles IV. Proyecto completo, con reconocimiento al cumplimiento de objetivos.",
+    "tags": ["ecommerce", "tecnología", "tiendas", "ux", "cumplimiento"]
+  },
+  {
+    "id": "7",
+    "title": "Presentación: BARATHEON - QueHayPaHacer",
+    "summary": "El equipo BARATHEON presentó 'QueHayPaHacer', una web que centraliza eventos culturales de Colombia.",
+    "content": "La aplicación permite explorar eventos culturales y actividades de las principales ciudades del país desde una sola plataforma. Se destacó su enfoque en la usabilidad y la organización por regiones y categorías.",
+  "images": ["/images/Default.webp"],
+    "date": "2025-10-28",
+    "presenters": ["Equipo BARATHEON"],
+    "details": "Jornada 1 - The Nexus Battles IV. Proyecto valorado por su aporte cultural y funcionalidad de búsqueda centralizada.",
+    "tags": ["cultura", "eventos", "colombia", "usabilidad", "buscador"]
+  },
+  {
+    "id": "8",
+    "title": "Presentación: CentralNews - Portal de noticias integradas",
+    "summary": "El grupo presentó una página web que centraliza noticias provenientes de distintas fuentes.",
+    "content": "El portal organiza y presenta titulares de diferentes medios digitales, integrando noticias de varias categorías en una sola vista. Se resaltó su diseño simple y funcional.",
+  "images": ["/images/Default.webp"],
+    "date": "2025-10-28",
+    "presenters": ["Equipo CentralNews"],
+    "details": "Jornada 1 - The Nexus Battles IV. Proyecto centrado en la agregación de información y la accesibilidad de contenidos.",
+    "tags": ["agregador", "noticias", "medios", "categorías", "accesibilidad"]
+  },
+  {
+    "id": "9",
+    "title": "Presentación: LANNISTER NEWS - Traducción automática con mBERT",
+    "summary": "El equipo LANNISTER NEWS presentó una app que traduce noticias usando inteligencia artificial.",
+    "content": "Implementaron el modelo mBERT para traducir noticias obtenidas mediante web scraping. La aplicación incluye modo claro y oscuro, y permite consultar versiones traducidas de diferentes fuentes de información.",
+  "images": ["/images/IMG_2975.webp", "/images/IMG_2976.webp"],
+    "date": "2025-10-28",
+    "presenters": ["Equipo LANNISTER NEWS"],
+    "details": "Jornada 1 - The Nexus Battles IV. Proyecto destacado por su aplicación de IA para la traducción automática.",
+    "tags": ["ia", "traducción", "mbert", "scraping", "noticias"]
+  },
+  {
+    "id": "10",
+    "title": "Presentación: STARK - Portal financiero con chatbot",
+    "summary": "El equipo STARK presentó una web de noticias financieras con métricas y chatbot integrado.",
+    "content": "Utilizaron web scraping para obtener noticias desde Google News y las organizaron en su portal. Incluye métricas sobre empresas como Amazon y un chatbot que responde dudas sobre la página. Además, enlaza cada noticia al portal original.",
+  "images": ["/images/IMG_2977.webp", "/images/IMG_2978.webp"],
+    "date": "2025-10-28",
+    "presenters": ["Equipo STARK"],
+    "details": "Jornada 1 - The Nexus Battles IV. Proyecto con alto nivel técnico, integrando scraping, análisis y atención al usuario.",
+    "tags": ["finanzas", "chatbot", "scraping", "métricas", "empresas"]
+  },
+  {
+    "id": "11",
+    "title": "Presentación: TARGARYEN - LearnIA",
+    "summary": "El equipo TARGARYEN presentó LearnIA, una web educativa con recopilación automatizada de cursos.",
+    "content": "Mediante web scraping, la plataforma LearnIA extrae y organiza material educativo desde diversas fuentes. Su meta fue alcanzar la indexación de al menos 10,000 cursos en línea para centralizarlos en un solo entorno de aprendizaje.",
+  "images": ["/images/IMG_2979.webp", "/images/IMG_2980.webp", "/images/IMG_2981.webp"],
+    "date": "2025-10-28",
+    "presenters": ["Equipo TARGARYEN"],
+    "details": "Jornada 1 - The Nexus Battles IV. Proyecto educativo con enfoque en inteligencia artificial y scraping masivo.",
+    "tags": ["educación", "scraping", "cursos", "ia", "aprendizaje"]
+  },
+  {
+    "id": "12",
+    "title": "Presentación: TYRREL - Buscador de descuentos con chatbot",
+    "summary": "El equipo TYRREL desarrolló una app web que busca descuentos en tiempo real.",
+    "content": "La aplicación integra un chatbot capaz de encontrar los mejores descuentos disponibles según la búsqueda del usuario. Cuenta con modo invitado y modo usuario; el primero no guarda búsquedas, mientras que el segundo conserva el historial de conversaciones.",
+  "images": ["/images/IMG_2982.webp", "/images/IMG_2983.webp", "/images/IMG_2984.webp", "/images/IMG_2985.webp"],
+    "date": "2025-10-28",
+    "presenters": ["Equipo TYRREL"],
+    "details": "Jornada 1 - The Nexus Battles IV. Proyecto con integración de IA conversacional aplicada a compras en línea.",
+    "tags": ["descuentos", "chatbot", "tiempo-real", "ecommerce", "historial"]
+  }
+  ,
+  {
+    "id": "13",
+    "title": "Presentación: Estructura de datos - Sistema de gestión de trenes",
+    "summary": "El grupo 4 presentó un sistema de gestión de trenes basado en estructuras de datos.",
+    "content": "El proyecto busca modernizar los procesos manuales de una empresa ferroviaria. Utilizaron árboles para representar estaciones y determinar rutas óptimas, además de colas de prioridad para gestionar el abordaje de pasajeros. Durante la exposición se explicaron los fundamentos de grafos y su aplicación en la solución.",
+  "images": ["/images/Trenes.webp"],
+    "date": "2025-10-29",
+    "presenters": ["Grupo 4"],
+    "details": "Jornada 2 - The Nexus Battles IV. Se recomendó mejorar la presentación de conclusiones y el uso de software especializado para diagramas UML.",
+    "tags": ["estructuras-de-datos", "trenes", "grafos", "colas", "árboles"]
+  },
+  {
+    "id": "14",
+    "title": "Presentación: Urban Shoes - Sistema de gestión de inventario",
+    "summary": "El proyecto Urban Shoes desarrolló un sistema de control de inventario en colaboración con Ingeniería Industrial.",
+    "content": "El sistema registra entradas, salidas y actualizaciones del stock de productos de la tienda Urban Shoes. Los desarrolladores destacaron la automatización de los procesos logísticos y el control del inventario en tiempo real. Durante la exposición se discutió la importancia de mantener la lógica de negocio en el modelo del sistema.",
+  "images": ["/images/UrbanShoes.webp", "/images/UrbanShoes2.webp"],
+    "date": "2025-10-29",
+    "presenters": ["Equipo Urban Shoes"],
+    "details": "Jornada 2 - The Nexus Battles IV. Se observó el uso moderado de herramientas de IA y se reforzó la importancia de separar la lógica de negocio en el modelo.",
+    "tags": ["inventario", "gestión", "colaborativo", "negocio", "automatización"]
+  },
+  {
+    "id": "15",
+    "title": "Presentación: Agrotechnova - Plataforma para la industria agrónoma",
+    "summary": "El equipo Agrotechnova presentó una web destinada a apoyar la gestión tecnológica en el sector agrónomo.",
+    "content": "El sistema fue desarrollado sin frameworks, utilizando únicamente HTML, CSS y JavaScript. Su propósito es ofrecer herramientas digitales que optimicen la gestión de procesos agrícolas y la visualización de información del sector. Se valoró la simplicidad del enfoque y el esfuerzo en implementar todo desde cero.",
+  "images": ["/images/Agrotech.webp", "/images/Agrotech2.webp"],
+    "date": "2025-10-29",
+    "presenters": ["Equipo Agrotechnova"],
+    "details": "Jornada 2 - The Nexus Battles IV. Proyecto enfocado en soluciones digitales para el agro sin uso de frameworks externos.",
+    "tags": ["agrotech", "javascript", "html", "css", "gestión-agrícola"]
+  },
+  {
+    "id": "16",
+    "title": "Presentación: J&C Automatización y Robótica - Sitio web informativo",
+    "summary": "J&C Automatización y Robótica presentó una página web informativa sobre su empresa y proyectos.",
+    "content": "El sitio web muestra los servicios ofrecidos por la empresa y los casos de éxito desarrollados junto a sus aliados. Durante la exposición se destacó la claridad del diseño y la utilidad de la web para la divulgación comercial y técnica.",
+  "images": ["/images/JYC.webp", "/images/JYC2.webp", "/images/JYC3.webp"],
+    "date": "2025-10-29",
+    "presenters": ["J&C Automatización y Robótica"],
+    "details": "Jornada 2 - The Nexus Battles IV. Proyecto informativo centrado en la presentación corporativa de la empresa y sus logros.",
+    "tags": ["automatización", "robótica", "empresa", "web-informativa", "casos-de-éxito"]
+  },
+  {
+    "id": "17",
+    "title": "Presentación: Ciberintegrity - Prototipo de ciberseguridad",
+    "summary": "El equipo Ciberintegrity desarrolló un módulo web de ciberseguridad implementado en un sprint y medio.",
+    "content": "El proyecto consistió en un prototipo funcional para ofrecer servicios de seguridad informática. A pesar del corto tiempo, el grupo logró presentar una interfaz demostrativa y explicar los principios del sistema. El módulo fue solicitado después del primer sprint y se completó en un tiempo reducido.",
+  "images": ["/images/CiberIntegrity.webp", "/images/CiberIntrigrity2.webp"],
+    "date": "2025-10-29",
+    "presenters": ["Equipo Ciberintegrity"],
+    "details": "Jornada 2 - The Nexus Battles IV. Prototipo desarrollado rápidamente que demuestra conocimiento técnico en ciberseguridad y diseño web.",
+    "tags": ["ciberseguridad", "prototipo", "seguridad", "web", "módulo"]
+  }
+  ,
+  {
+    "id": "18",
+    "title": "Presentación: ECO UPB - Reciclaje de basura con IA",
+    "summary": "El equipo ECO UPB presentó una aplicación móvil que promueve el reciclaje mediante incentivos y reconocimiento con IA.",
+    "content": "La aplicación busca incentivar a los estudiantes a recoger y reciclar basura, ofreciendo recompensas como premios o puntos de reconocimiento. El objetivo es fomentar la conciencia ambiental dentro del campus universitario. Durante la exposición mostraron un video demostrativo, aunque se recomendó mejorar la narrativa para explicar el funcionamiento interno de la app.",
+    "images": ["/images/ecoupb.webp"],
+    "date": "2025-10-30",
+    "presenters": ["Equipo ECO UPB"],
+  "details": "Jornada 3 - The Nexus Battles IV. Proyecto desarrollado en la materia de Introducción a Ingeniería de Sistemas e Informática.",
+    "tags": ["reciclaje", "sostenibilidad", "ia", "medioambiente", "educativo"]
+  },
+  {
+    "id": "19",
+    "title": "Presentación: UPB Study+ - Red social académica",
+    "summary": "UPB Study+ es una aplicación móvil que conecta a estudiantes y docentes para fortalecer la comunicación académica y social.",
+    "content": "La aplicación se divide en dos secciones: una académica, organizada por semestre y carrera para apoyar el aprendizaje, y otra social, enfocada en la interacción entre estudiantes y profesores. El proyecto busca promover el sentido de pertenencia y colaboración dentro de la comunidad universitaria. El video de presentación tuvo una edición que facilitó la comprensión del funcionamiento.",
+    "images": ["/images/upbstudy.webp"],
+    "date": "2025-10-30",
+    "presenters": ["Equipo UPB Study+"],
+  "details": "Jornada 3 - The Nexus Battles IV. Proyecto de la asignatura Introducción a Ingeniería de Sistemas e Informática.",
+    "tags": ["red-social", "educación", "comunicación", "aprendizaje", "upb"]
+  },
+  {
+    "id": "20",
+    "title": "Presentación: Pet Finder - Identificador de mascotas perdidas con IA",
+    "summary": "Pet Finder es una aplicación móvil que ayuda a localizar mascotas perdidas mediante reconocimiento de imágenes.",
+    "content": "El sistema utiliza inteligencia artificial para identificar perros o gatos extraviados a partir de fotografías publicadas por los usuarios. El objetivo es conectar dueños y rescatistas mediante una red colaborativa y automatizada. Se destacó el potencial de la herramienta para apoyar causas sociales y de bienestar animal.",
+    "images": ["/images/petfinder.webp"],
+    "date": "2025-10-30",
+    "presenters": ["Equipo Pet Finder"],
+  "details": "Jornada 3 - The Nexus Battles IV. Proyecto del curso Proyecto Integrador III.",
+    "tags": ["ia", "mascotas", "reconocimiento", "perros", "solidaridad"]
+  },
+  {
+    "id": "21",
+    "title": "Presentación: UPB Señas - Traductor básico de lenguaje de señas",
+    "summary": "UPB Señas es una aplicación que traduce lenguaje de señas de forma básica para mejorar la inclusión comunicativa.",
+    "content": "El proyecto busca apoyar la inclusión de personas sordas mediante un traductor básico de lenguaje de señas. Durante la presentación, los estudiantes mostraron las funcionalidades de detección visual y conversión textual. Se resaltó su utilidad social y el enfoque inclusivo del desarrollo.",
+    "images": ["/images/upbsenas.webp"],
+    "date": "2025-10-30",
+    "presenters": ["Equipo UPB Señas"],
+  "details": "Jornada 3 - The Nexus Battles IV. Proyecto del curso Introducción a Ingeniería de Sistemas e Informática.",
+    "tags": ["inclusión", "lenguaje-de-señas", "ia", "educativo", "traducción"]
+  },
+  {
+    "id": "22",
+    "title": "Presentación: ElectroMed - Monitoreo móvil de electrolitos",
+    "summary": "ElectroMed es una aplicación móvil para el seguimiento de electrolitos en pacientes hospitalarios.",
+    "content": "El sistema permite monitorear los niveles de electrolitos en pacientes en tiempo real, mejorando la atención médica y la toma de decisiones. Se destacó el enfoque médico del desarrollo y su potencial integración con sistemas hospitalarios.",
+    "images": ["/images/electromed.webp"],
+    "date": "2025-10-30",
+    "presenters": ["Equipo ElectroMed"],
+  "details": "Jornada 3 - The Nexus Battles IV. Proyecto del curso Proyecto Integrador III.",
+    "tags": ["salud", "monitoreo", "pacientes", "medicina", "movil"]
+  },
+  {
+    "id": "23",
+    "title": "Presentación: Histofy - Clasificación de historias clínicas con IA",
+    "summary": "Histofy es una aplicación móvil que utiliza IA y PLN para clasificar automáticamente historias clínicas.",
+    "content": "El sistema emplea inteligencia artificial y procesamiento de lenguaje natural para organizar y proteger historias clínicas de manera segura. Busca optimizar la clasificación médica garantizando privacidad y confidencialidad de los datos de los pacientes.",
+    "images": ["/images/histofy.webp"],
+    "date": "2025-10-30",
+    "presenters": ["Equipo Histofy"],
+  "details": "Jornada 3 - The Nexus Battles IV. Proyecto del curso Sistemas Distribuidos.",
+    "tags": ["salud", "pln", "historia-clinica", "seguridad", "ia"]
+  },
+  {
+    "id": "24",
+    "title": "Presentación: MediTranslateAI - Traducción médica asistida por IA",
+    "summary": "MediTranslateAI es una app que traduce diagnósticos médicos y apoya la comprensión de tratamientos.",
+    "content": "El sistema utiliza procesamiento de lenguaje natural e inteligencia artificial para traducir diagnósticos y ofrecer explicaciones médicas personalizadas. Busca mejorar la comunicación entre pacientes y profesionales de la salud, especialmente en contextos de barrera idiomática.",
+    "images": ["/images/meditranslate.webp", "/images/meditranslate2.webp"],
+    "date": "2025-10-30",
+    "presenters": ["Equipo MediTranslateAI"],
+  "details": "Jornada 3 - The Nexus Battles IV. Proyecto del curso Proyecto Integrador III y Sistemas Distribuidos.",
+    "tags": ["pln", "salud", "traducción", "ia", "asistencia-medica"]
+  },
+  {
+    "id": "25",
+    "title": "Presentación: ImgK - Identificador de calorías por imágenes",
+    "summary": "ImgK es una aplicación móvil que identifica alimentos y estima su valor calórico mediante IA.",
+    "content": "El sistema usa modelos de visión por computadora para reconocer alimentos y calcular sus calorías estimadas. La herramienta busca promover hábitos saludables y una alimentación consciente. Fue desarrollada como parte del curso Proyecto Integrador III.",
+    "images": ["/images/imgk.webp"],
+    "date": "2025-10-30",
+    "presenters": ["Equipo ImgK"],
+  "details": "Jornada 3 - The Nexus Battles IV. Aplicación enfocada en nutrición e inteligencia artificial.",
+    "tags": ["ia", "nutrición", "salud", "calorías", "visión-computacional"]
+  },
+  {
+    "id": "26",
+    "title": "Presentación: Distrify - Almacenamiento distribuido de archivos",
+    "summary": "Distrify es una aplicación para la gestión y distribución de archivos en entornos distribuidos.",
+    "content": "Desarrollada en el curso de Sistemas Distribuidos, la aplicación permite subir, almacenar y descargar archivos de manera distribuida, utilizando balanceadores de carga para mejorar la fiabilidad. Se resaltó la implementación individual y la eficiencia del sistema.",
+    "images": ["/images/distrify.webp"],
+    "date": "2025-10-30",
+    "presenters": ["Equipo Distrify"],
+  "details": "Jornada 3 - The Nexus Battles IV. Proyecto individual que demuestra dominio en sistemas distribuidos.",
+    "tags": ["distribuido", "archivos", "balanceo", "sistemas", "tecnologia"]
+  },
+  {
+    "id": "27",
+    "title": "Presentación: Bless Imagen Plus - Mejora de imágenes con nodos y Python",
+    "summary": "Bless Imagen Plus es un sistema distribuido que utiliza nodos y Python para procesar y mejorar imágenes.",
+    "content": "El proyecto emplea nodos interconectados para la carga y descarga de imágenes, aplicando modelos de procesamiento que optimizan su calidad. Fue desarrollado por dos estudiantes en la asignatura de Sistemas Distribuidos y demuestra conocimientos en arquitectura distribuida y procesamiento visual.",
+    "images": ["/images/blessimageplus.webp", "/images/blessimageplus2.webp"],
+    "date": "2025-10-30",
+    "presenters": ["Equipo Bless Imagen Plus"],
+  "details": "Jornada 3 - The Nexus Battles IV. Proyecto de procesamiento de imágenes en sistemas distribuidos.",
+    "tags": ["imágenes", "python", "sistemas-distribuidos", "nodos", "procesamiento-visual"]
+  }
+]
