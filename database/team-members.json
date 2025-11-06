@@ -1,172 +1,274 @@
 {
   "Equipo VIZLA": [
-    "Daniel Felipe Aguilar Latorre",
-    "Pablo Antonio Bravo Vergara",
-    "Santiago Gómez Cadena",
-    "David Ricardo Hernández Carranza",
-    "Carlos Fernando Ortiz Vargas",
-    "Andrés Felipe Pico García"
+    "522709 - Aguilar Latorre Daniel Felipe",
+    "504755 - Bravo Vergara Pablo Antonio",
+    "486117 - Gómez Cadena Santiago",
+    "488959 - Hernández Carranza David Ricardo",
+    "329998 - Ortiz Vargas Carlos Fernando",
+    "523010 - Pico García Andrés Felipe"
   ],
   "Equipo ELDAR": [
-    "Pedro Mateo Espinel Domínguez",
-    "Daniel Felipe Gutiérrez Mejía",
-    "Diego Alejandro Moreno Velandia",
-    "Lenny Alejandro Rincón Ramírez",
-    "Brenda Luz Salcedo Hernández",
-    "Diego Alejandro Suárez Mendoza"
+    "522053 - Espinel Domínguez Pedro Mateo",
+    "517087 - Gutiérrez Mejía Daniel Felipe",
+    "512926 - Moreno Velandia Diego Alejandro",
+    "510633 - Rincón Ramírez Lenny Alejandro",
+    "525650 - Salcedo Hernández Brenda Luz",
+    "518153 - Suárez Mendoza Diego Alejandro"
   ],
   "Equipo KRYZE": [
-    "Rubén Santiago Blandón Ardila",
-    "Juan Pablo Carvajal Giraldo",
-    "Jesús David Falon Palmezano",
-    "Juan David Fuentes Patiño",
-    "José Daniel Leguízamo Vásquez",
-    "Camilo Andrés Rodríguez Forero"
+    "521227 - Blandón Ardila Rubén Santiago",
+    "517467 - Carvajal Giraldo Juan Pablo",
+    "510059 - Falon Palmezano Jesús David",
+    "490469 - Fuentes Patiño Juan David",
+    "492444 - Leguízamo Vásquez José Daniel",
+    "512640 - Rodríguez Forero Camilo Andrés"
   ],
   "Equipo ROOK": [
-    "Juan Eduardo Benítez Pájaro",
-    "Santiago Castellanos Rincón",
-    "Luis Alfredo Fuentes Romero",
-    "Karen Nicol Dayanna Lizarazo Ortiz",
-    "William Oswaldo Sanabria Gutiérrez",
-    "Gian Kieffer Toledo De La Cruz"
+    "515362 - Benítez Pájaro Juan Eduardo",
+    "529490 - Castellanos Rincón Santiago",
+    "526437 - Fuentes Romero Luis Alfredo",
+    "472655 - Lizarazo Ortiz Karen Nicol Dayanna",
+    "512958 - Sanabria Gutiérrez William Oswaldo",
+    "525569 - Toledo De La Cruz Gian Kieffer"
+  ],
+  "Equipo WREN": [
+    "504756 - Espitia Bueno Julián Alberto",
+    "525516 - Flórez Julio Jeison Steven",
+    "520250 - Hallado Abaunza Raúl Santiago",
+    "495143 - Núñez Rincón Sergio Eliecer",
+    "529337 - Rodríguez Castro Johan David",
+    "514650 - Urquijo Bautista Joseph Camilo"
   ],
   "Equipo ARRYN": [
-    "Julián Alberto Espitia Bueno",
-    "Jeison Steven Flórez Julio",
-    "Raúl Santiago Hallado Abaunza",
-    "Sergio Eliecer Núñez Rincón",
-    "Johan David Rodríguez Castro",
-    "Joseph Camilo Urquijo Bautista"
+    "297612 - Juan Camilo Gómez Manotas",
+    "523558 - Juan David Monsalve Niño",
+    "515119 - Nicolás Rodríguez Acevedo",
+    "531138 - Sofía Santis Silva",
+    "530693 - Tomás Uribe Sánchez"
   ],
   "Equipo BARATHEON": [
-    "Juan Camilo Gómez Manotas",
-    "Juan David Monsalve Niño",
-    "Nicolás Rodríguez Acevedo",
-    "Sofía Santis Silva",
-    "Tomás Uribe Sánchez"
+    "512634 - Fernando Cancelado Figueroa",
+    "526219 - Zarhet Valentina Fuentes Bottia",
+    "518628 - Nicolás García Mejía",
+    "525539 - Jan Dante Leal Arenas",
+    "516863 - Bryan Gonzalo Lizcano Durán"
   ],
   "Equipo CentralNews": [],
   "Equipo LANNISTER NEWS": [
-    "Fernando Cancelado Figueroa",
-    "Zarhet Valentina Fuentes Bottia",
-    "Nicolás García Mejía",
-    "Jan Dante Leal Arenas",
-    "Bryan Gonzalo Lizcano Durán"
+    "504855 - Samuel Arango Díaz",
+    "524953 - Juan Manuel Guerrero Rueda",
+    "495121 - Wilson Andrés Moreno Velandia",
+    "524775 - Néstor Stiven Pabón Flórez",
+    "523748 - Sergio Alejandro Sanabria Moreno"
   ],
   "Equipo STARK": [
-    "Cristian Andrés Gómez Jaimes",
-    "Cristian Camilo Plata Rodríguez",
-    "Rober Julián Quintero Oviedo",
-    "Juan Pablo Silva Vásquez"
+    "509399 - Juan Sebastián Granados Jaimes",
+    "516952 - Juan Carlos Niño Osorio",
+    "518037 - Leyder Steven Ortiz Jaimes",
+    "466025 - Jorge Luis Osorio Silva",
+    "421734 - Carlos Alberto Quintero Arias"
   ],
   "Equipo TARGARYEN": [
-    "Leyder Steven Ortiz Jaimes",
-    "Jorge Luis Osorio Silva",
-    "Carlos Alberto Quintero Arias",
-    "Juan Andrés Contreras Hernández",
-    "Karol Nicol Dayanna Lizarazo Ortiz",
-    "Raúl Ferney Lozano Navarro",
-    "María Angélica Parra Gratz",
-    "Jerson Arley Porras Lozano"
+    "523005 - Juan Andrés Contreras Hernández",
+    "472655 - Karol Nicol Dayanna Lizarazo Ortiz",
+    "492542 - Raúl Ferney Lozano Navarro",
+    "523333 - María Angélica Parra Gratz",
+    "490069 - Jerson Arley Porras Lozano"
   ],
   "Equipo TYRREL": [
-    "Samuel Arango Díaz",
-    "Juan Manuel Guerrero Rueda",
-    "Wilson Andrés Moreno Velandia",
-    "Néstor Stiven Pabón Flórez",
-    "Sergio Alejandro Sanabria Moreno",
-    "Juan Sebastián Granados Jaimes",
-    "Juan Carlos Niño Osorio"
+    "522709 - Daniel Felipe Aguilar Latorre",
+    "523254 - Cristian Andrés Gómez Jaimes",
+    "493417 - Cristian Camilo Plata Rodríguez",
+    "372968 - Rober Julián Quintero Oviedo",
+    "511183 - Juan Pablo Silva Vásquez"
   ],
-  "Grupo 4": [
-    "Samuel Castro Ruiz",
-    "Melany Mejía Niño",
-    "Daniel Quiroga Cubides",
-    "Paula Andrea Rodríguez Cifuentes",
-    "Iván Felipe Lastre Guerrero",
-    "Keynner Andrés Loaiza Ávila"
+  "Equipo 1": [
+    "564284 - Ángel Leonardo Lagos Salamanca",
+    "564461 - Xander Sebastián Pineda Larrota",
+    "561900 - Julián Mateo Sierra Vargas",
+    "545613 - Santiago Prada Pinilla"
+  ],
+  "Equipo 2": [
+    "564816 - Alexander Gómez Grajales",
+    "563127 - Albert David López Pinzón",
+    "548497 - Jhaider David Zambrano Parra"
+  ],
+  "Equipo 3": [
+    "559250 - Rafael Camilo Márquez Almenarez",
+    "558786 - Jorge Andrés Cardona Niño",
+    "483946 - Juan José Alba Palma"
+  ],
+  "Equipo 4": [
+    "552835 - María Catalina Sánchez Saavedra",
+    "546756 - Juan José González Rosales"
+  ],
+  "Equipo 5": [
+    "535559 - Juan Diego Bohorquez Vargas",
+    "523749 - José David Serrano Pertuz"
   ],
   "Equipo Urban Shoes": [
-    "Rafael Camilo Márquez Almenarez",
-    "Jorge Andrés Cardona Niño",
-    "Juan José Alba Palma",
-    "María Catalina Sánchez Saavedra",
-    "Juan José González Rosales"
+    "552541 - Carlos David Figueroa Arguello",
+    "548819 - Gabriel Matías Rodríguez Castro",
+    "550926 - Jhostyn Santiago Gualdrón Jaimes",
+    "551064 - Jorge Andrés González Figueroa",
+    "552294 - Juan Pablo Medina Meneses",
+    "550092 - Luis Eduardo Morales Palencia",
+    "550923 - Andrés Daniel Flórez Mendoza"
   ],
-  "Equipo Agrotechnova": [
-    "José David Serrano Pertuz",
-    "Carlos David Figueroa Arguello",
-    "Gabriel Matías Rodríguez Castro",
-    "Jhostyn Santiago Gualdrón Jaimes"
+  "Equipo Rana Shoes": [
+    "474171 - Angy Natalia Mejía Delgado",
+    "545638 - Cristian Camilo Chaparro Carvajal",
+    "551547 - Daniel Fernando Hoguín Sánchez",
+    "546122 - Javier Alexander Salazar Flórez",
+    "551914 - Santiago Sanabria Uribe"
   ],
-  "J&C Automatización y Robótica": [
-    "Jorge Andrés González Figueroa",
-    "Juan Pablo Medina Meneses",
-    "Luis Eduardo Morales Palencia",
-    "Andrés Daniel Flórez Mendoza"
+  "Equipo Veterinaria SOS": [
+    "550164 - David Eduardo Flórez Durán",
+    "548498 - David Ricardo Carvajal Barragán",
+    "549106 - José David Mora Patiño",
+    "548603 - Juan David Ordóñez Ferreira",
+    "551836 - Juan David Téllez Guisa",
+    "552833 - Juan Pablo Arenas Avendaño",
+    "546747 - Libardo Bravo Durán"
   ],
-  "Equipo Ciberintegrity": [
-    "Angy Natalia Mejía Delgado",
-    "Cristian Camilo Chaparro Carvajal",
-    "Daniel Fernando Hoguín Sánchez",
-    "Javier Alexander Salazar Flórez",
-    "Santiago Sanabria Uribe"
+  "Equipo Avitech": [
+    "550324 - Andrés F. Sánchez Palacio",
+    "551556 - Carlos F. Pimiento Fonseca",
+    "549105 - Isabella Montoya Granados",
+    "545445 - José O. Porras Prada",
+    "542858 - Melissa Peterson Calderon",
+    "518862 - Néstor Guillermo N. Lasso Ramírez",
+    "504755 - Pablo A. Bravo Vergara",
+    "550151 - Simón Pérez Gómez"
+  ],
+  "Centro de Desarrollo de Software": [
+    "375474 - Pinzón Camacho Andrés Felipe",
+    "537116 - García Bernate Erick David",
+    "532498 - Saavedra Martínez Hansel Santiago",
+    "531626 - Vargas Pardo Miguel Ángel",
+    "535929 - Guerra Suárez Sergio Iván"
+  ],
+  "Centro de Biotecnología": [
+    "518282 - Díaz Calderón Caren Julieth",
+    "532674 - López Panesso Iván Andrés",
+    "533975 - Hernández Remolina Juan Sebastián",
+    "525473 - Adarme Gómez Karen Lisseth",
+    "460877 - Vargas Martínez Miguel José",
+    "518417 - Neira Ramírez Sebastián"
+  ],
+  "Centro de Energías Renovables": [
+    "519180 - Barragán Sánchez Silvia Juliana",
+    "514511 - Tapias Fonseca Andersson Joneyder",
+    "520516 - Suárez Suárez Claudia Natalia",
+    "521377 - González Angulo Iván Mateo",
+    "523068 - Almeida Rincón Johan Sebastián",
+    "524296 - Villamizar Gómez Leonel David",
+    "524580 - Arenales Peña Ronald Eduardo"
+  ],
+  "Centro de Agroindustria Inteligente": [
+    "453475 - Valero Quevedo Alexer Mauricio",
+    "535358 - Quiroga Cubides Daniela",
+    "531391 - Lamus Ruiz Elian Camilo",
+    "535104 - Rodríguez Cifuentes Paula Andrea",
+    "537060 - Espinel Arango Sergio Andrés"
+  ],
+  "Centro de Robótica y Automatización": [
+    "532577 - Meneses Vega Dilan Kaleth",
+    "533352 - Tamayo Díaz Erick Emanuel",
+    "524727 - Lastre Guerrero Iván Felipe",
+    "533889 - Loaiza Ávila Keynner Andrés",
+    "531392 - Mejía Niño Melany",
+    "535871 - Castro Ruiz Samuel"
+  ],
+  "Centro de Ciberseguridad": [
+    "519025 - Ayala Mantilla Andrés Santiago",
+    "525608 - Porras Barajas Jairo Esteban",
+    "506952 - Soria Rojas José David",
+    "535089 - Rincón Cediel Juan David"
+  ],
+  "Centro de Soluciones Smart Cities": [
+    "528409 - Ferrucho Cristancho Alex Santiago",
+    "229988 - Contreras Sánchez Sergio Ismael"
+  ],
+
+  "Equipo ImgK": [
+    "587232 - Delgado Pinto Sara Alejandra"
   ],
   "Equipo ECO UPB": [
-    "Sara Alejandra Delgado Pinto",
-    "José Gabriel Castellanos García",
-    "Andrés Sebastián Quintero Alvarado",
-    "Andrés Fernando Quintero Llanos",
-    "David Santiago Vesga Durán"
+    "525842 - Castellanos García José Gabriel",
+    "586149 - Quintero Alvarado Andrés Sebastián",
+    "587285 - Quintero Llanos Andrés Fernando",
+    "594278 - Vesga Durán David Santiago"
   ],
   "Equipo UPB Study+": [
-    "Julián Camilo García Rincón",
-    "Ángela Daniela Parra Afanador",
-    "Sarey Nalieth Salguero Landínez",
-    "Jesús David Suárez Henao"
+    "591412 - García Rincón Julián Camilo",
+    "591076 - Parra Afanador Ángela Daniela",
+    "591420 - Salguero Landínez Sarey Nalieth",
+    "585001 - Suárez Henao Jesús David"
   ],
   "Equipo Pet Finder": [
-    "Ivanna Gisell Suárez Martínez",
-    "Jader Aldrey Suárez Sánchez",
-    "Alex Santiago Jaimes Medina",
-    "Andrés Felipe Ochoa Quiróz"
+    "578168 - Suárez Martínez Ivanna Gisell",
+    "587287 - Suárez Sánchez Jader Aldrey",
+    "591413 - Jaimes Medina Alex Santiago",
+    "591867 - Ochoa Quiroz Andrés Felipe",
+    "585131 - Ospina Capacho Javier Alberto",
+    "593923 - Vera Rojas Juan David"
   ],
   "Equipo UPB Señas": [
-    "Javier Alberto Ospina Capacho",
-    "Juan David Vera Rojas",
-    "Juan Sebastián Rodríguez García"
+    "594393 - Rodríguez García Juan Sebastián",
+    "511422 - Santa Marín David Andrés",
+    "590031 - Saravia García Jesús Manuel Alexander",
+    "586392 - Vargas Pradilla Nicolás"
   ],
   "Equipo ElectroMed": [
-    "David Andrés Santa Marín",
-    "Jesús Manuel Alexander Saravia García",
-    "Nicolás Vargas Pradilla"
+    "500757 - Abello Jiménez María José",
+    "503901 - Afanador Carrascal Ana Gabriela",
+    "501013 - Jaimes Cala Rogger Santiago",
+    "502190 - Montañez Valenzuela Alex Daniel",
+    "500772 - Rey Vásquez Juan Nicolás",
+    "504682 - Tabares Peláez Juan Felipe",
+    "500781 - Chávez King Juliana"
+  ],
+  "Equipo BlessHealth24/7": [
+    "502339 - Manosalva Aceros Santos Enmanuel",
+    "500890 - Mesa Puerto Sergio David",
+    "505060 - Muñoz Rojas Juan David",
+    "503545 - Niño Arenas David Santiago"
+  ],
+  "Equipo TONGI": [
+    "501008 - Vega Sabino Fernando Javier",
+    "503702 - Carvajal Rondón Juan David",
+    "487905 - Rodríguez Curubo Christian Mauricio",
+    "507251 - Montero Gutiérrez José Daniel",
+    "503277 - Patiño Parra Juan David"
+  ],
+  "Equipo PicLab": [
+    "488201 - Díaz Gómez Nelson Y."
   ],
   "Equipo Histofy": [
-    "María José Abello Jiménez",
-    "Ana Gabriela Afanador Carrascal",
-    "Rogger Santiago Jaimes Cala",
-    "Alex Daniel Montañez Valenzuela"
+    "373624 - Castro Ortiz Camilo Alfonso",
+    "502466 - Gómez Bueno Juan Ángel",
+    "503120 - Meneses Rojas Antonella",
+    "434784 - Téllez Salazar Valentina",
+    "503709 - Villarreal Vásquez Angie Lorena"
   ],
   "Equipo MediTranslateAI": [
-    "Juan Nicolás Rey Vásquez",
-    "Juan Felipe Tabares Peláez",
-    "Juliana Chávez King"
+    "460746 - Granados Moreno Javier Mauricio",
+    "432059 - Marín Díaz Edward Daniel",
+    "496350 - Prada Lugo Marco Antonio",
+    "410215 - Vera Montaña Jimmy Andrés",
+    "402946 - Galvis Navarro Daniel Felipe"
   ],
-  "Equipo ImgK": [
-    "Santos Enmanuel Manosalva Aceros",
-    "Sergio David Mesa Puerto",
-    "Juan David Muñoz Rojas"
+  "Equipo PixPar": [
+    "492710 - Ardila Báez Patricia",
+    "492786 - Maldonado Rojas Santiago",
+    "488215 - Pérez Luna Karen Y."
   ],
-  "Equipo Distrify": [
-    "David Santiago Niño Arenas",
-    "Fernando Javier Vega Sabino",
-    "Juan David Carvajal Rondón"
+  "Equipo DistriFile": [
+    "486989 - Romero Castro María J."
   ],
-  "Equipo Bless Imagen Plus": [
-    "Christian Mauricio Rodríguez Curubo",
-    "José Daniel Montero Gutiérrez",
-    "Juan David Patiño Parra",
-    "Nelson Y. Díaz Gómez"
+  "Equipo Bless Image Plus": [
+    "500781 - Chávez King Juliana",
+    "501008 - Vega Sabino Fernando J."
   ]
 }
