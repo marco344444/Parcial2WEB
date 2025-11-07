@@ -1,0 +1,571 @@
+================================================================================
+    DOCUMENTACIÓN DEL PROYECTO - PARCIAL 2 WEB
+    Jornada de Proyectos Integradores 2025-II UPB
+================================================================================
+
+================================================================================
+1. INFORMACIÓN GENERAL DEL PROYECTO
+================================================================================
+
+Nombre: Noticias y Proyectos UPB
+Descripción: Sistema web de noticias sobre la Jornada de Proyectos 
+             Integradores 2025-II de la Universidad Pontificia Bolivariana
+Arquitectura: MVT (Model-View-Template)
+Tecnologías: Node.js, Express 5, TypeScript, Jest
+Repositorio: https://github.com/marco344444/Parcial2WEB
+
+
+================================================================================
+2. ARQUITECTURA MVT (MODEL-VIEW-TEMPLATE)
+================================================================================
+
+El proyecto sigue el patrón arquitectónico MVT:
+
+┌─────────────────────────────────────────────────────────────────┐
+│                    FLUJO DE LA APLICACIÓN                        │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  Usuario → Router → View (Controller) → Model → Database        │
+│              ↓         ↓                   ↓         ↓           │
+│           Routes    Lógica de         Acceso a    JSON Files    │
+│                     Control           Datos                     │
+│                        ↓                                         │
+│                    Template                                      │
+│                        ↓                                         │
+│                   HTML Response                                  │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+
+COMPONENTES MVT:
+
+M - MODEL (Modelo):
+    Ubicación: src/news/model/NewsModel.ts
+    Función: Acceso y manipulación de datos
+    Responsabilidades:
+    - Leer datos de news.json y team-members.json
+    - Implementar búsqueda y filtrado
+    - Calcular similitud con algoritmo Jaccard
+    - Paginación y ordenamiento
+
+V - VIEW (Vista/Controlador):
+    Ubicación: src/news/view/NewsView.ts
+    Función: Controlar la lógica de negocio
+    Responsabilidades:
+    - Procesar peticiones HTTP
+    - Invocar métodos del modelo
+    - Pasar datos a las plantillas
+    - Manejar errores 404/500
+
+T - TEMPLATE (Plantilla):
+    Ubicación: src/template/
+    Función: Generar HTML dinámico
+    Archivos:
+    - layout.ts: estructura base HTML
+    - news.ts: lista y detalle de noticias
+    - home.ts: página principal
+    - error.ts: páginas de error
+    - register.ts: formulario de registro
+
+
+================================================================================
+3. ESTRUCTURA DEL PROYECTO
+================================================================================
+
+mvt-viernes/
+│
+├── database/                      # Base de datos JSON
+│   ├── news.json                  # 27 noticias de las jornadas
+│   └── team-members.json          # Integrantes de cada equipo
+│
+├── images/                        # Imágenes WebP optimizadas
+│   ├── Default.webp              # Imagen por defecto
+│   ├── IMG_*.webp                # Fotos de presentaciones
+│   └── [otros].webp              # Imágenes de equipos
+│
+├── src/                          # Código fuente TypeScript
+│   │
+│   ├── index.ts                  # Punto de entrada de la app
+│   │                             # Configura Express y rutas
+│   │
+│   ├── news/                     # Módulo de noticias (MVT)
+│   │   ├── model/
+│   │   │   └── NewsModel.ts      # MODEL: Acceso a datos
+│   │   ├── view/
+│   │   │   └── NewsView.ts       # VIEW: Controlador
+│   │   ├── router/
+│   │   │   └── NewsRouter.ts     # Rutas del módulo
+│   │   └── types/
+│   │       └── News.ts           # Tipos TypeScript
+│   │
+│   ├── error/                    # Módulo de errores
+│   │   ├── view/
+│   │   │   └── ErrorView.ts      # Controlador de errores
+│   │   └── router/
+│   │       └── ErrorRouter.ts    # Rutas de error
+│   │
+│   ├── user/                     # Módulo de usuarios (registro)
+│   │   ├── view/
+│   │   │   └── UserView.ts
+│   │   ├── router/
+│   │   │   └── UserRouter.ts
+│   │   └── types/
+│   │       └── User.ts
+│   │
+│   ├── template/                 # TEMPLATES: Generación HTML
+│   │   ├── layout.ts             # Estructura base (head, footer)
+│   │   ├── news.ts               # Lista y detalle noticias
+│   │   ├── home.ts               # Página de inicio
+│   │   ├── error.ts              # Páginas 404/500
+│   │   └── register.ts           # Formulario de registro
+│   │
+│   └── public/                   # Recursos estáticos
+│       └── css/
+│           └── app.css           # Estilos CSS (dark theme)
+│
+├── test/                         # Suite de pruebas (52 tests)
+│   ├── Layout.test.ts
+│   ├── TemplateError.test.ts
+│   ├── TemplateHome.test.ts
+│   ├── TemplateNews.test.ts
+│   ├── NewsRoutes.more.test.ts
+│   ├── ErrorRoutes.test.ts
+│   └── e2e/                      # Pruebas End-to-End
+│       ├── home.e2e.test.ts
+│       ├── filters.e2e.test.ts
+│       ├── detail.e2e.test.ts
+│       ├── static.e2e.test.ts
+│       └── error.e2e.test.ts
+│
+├── package.json                  # Dependencias del proyecto
+├── tsconfig.json                 # Configuración TypeScript
+├── jest.config.js                # Configuración de tests
+└── .gitignore                    # Archivos ignorados por Git
+
+
+================================================================================
+4. FLUJO DETALLADO DE UNA PETICIÓN
+================================================================================
+
+Ejemplo: Usuario visita /news?search=IA
+
+1. ROUTER (src/news/router/NewsRouter.ts)
+   ┌──────────────────────────────────────────────────────────┐
+   │ router.get('/news', NewsView.getNewsList)                │
+   └──────────────────────────────────────────────────────────┘
+   - Define la ruta /news
+   - Asocia con el método getNewsList de NewsView
+
+2. VIEW (src/news/view/NewsView.ts)
+   ┌──────────────────────────────────────────────────────────┐
+   │ getNewsList(req, res) {                                   │
+   │   const { search, jornada, category, limit } = req.query │
+   │   const news = NewsModel.search(search)                  │
+   │   const filtered = NewsModel.applyFilters(...)           │
+   │   const html = renderNewsListHtml(filtered)              │
+   │   res.send(html)                                         │
+   │ }                                                         │
+   └──────────────────────────────────────────────────────────┘
+   - Lee parámetros de búsqueda
+   - Invoca métodos del modelo
+   - Llama al template para generar HTML
+
+3. MODEL (src/news/model/NewsModel.ts)
+   ┌──────────────────────────────────────────────────────────┐
+   │ search(query) {                                           │
+   │   - Lee news.json                                        │
+   │   - Busca en título, contenido, presenters, tags         │
+   │   - Calcula similitud Jaccard                            │
+   │   - Retorna resultados ordenados                         │
+   │ }                                                         │
+   └──────────────────────────────────────────────────────────┘
+   - Accede a los datos
+   - Implementa lógica de búsqueda
+   - No genera HTML (separación de responsabilidades)
+
+4. TEMPLATE (src/template/news.ts)
+   ┌──────────────────────────────────────────────────────────┐
+   │ renderNewsListHtml(news[]) {                             │
+   │   return layout.renderPage({                             │
+   │     title: "Noticias",                                   │
+   │     content: `                                           │
+   │       <div class="filters">...</div>                     │
+   │       <div class="news-grid">                            │
+   │         ${news.map(n => card(n)).join('')}               │
+   │       </div>                                             │
+   │     `                                                     │
+   │   })                                                      │
+   │ }                                                         │
+   └──────────────────────────────────────────────────────────┘
+   - Genera HTML usando template literals
+   - Aplica estilos CSS
+   - Retorna página completa
+
+5. RESPUESTA AL CLIENTE
+   ┌──────────────────────────────────────────────────────────┐
+   │ HTML completo con:                                        │
+   │ - Header con menú de navegación                          │
+   │ - Filtros de búsqueda                                    │
+   │ - Grid de tarjetas de noticias                           │
+   │ - Footer                                                  │
+   └──────────────────────────────────────────────────────────┘
+
+
+================================================================================
+5. RUTAS PRINCIPALES DE LA APLICACIÓN
+================================================================================
+
+┌──────────────────┬────────────────────────────────────────────────┐
+│ RUTA             │ DESCRIPCIÓN                                    │
+├──────────────────┼────────────────────────────────────────────────┤
+│ GET /            │ Página de inicio (home)                        │
+│ GET /news        │ Lista de noticias con filtros                  │
+│ GET /news/:id    │ Detalle de una noticia específica              │
+│ GET /register    │ Formulario de registro                         │
+│ POST /register   │ Procesar registro de usuario                   │
+│ GET /static/*    │ Servir archivos estáticos (CSS, imágenes)     │
+│ GET *            │ Página 404 - No encontrado                     │
+└──────────────────┴────────────────────────────────────────────────┘
+
+PARÁMETROS DE BÚSQUEDA EN /news:
+- ?search=texto    : Busca en título, contenido, tags, presenters
+- ?jornada=1|2|3   : Filtra por jornada (1, 2 o 3)
+- ?category=Web    : Filtra por categoría
+- ?limit=4         : Limita cantidad de resultados
+
+
+================================================================================
+6. CARACTERÍSTICAS PRINCIPALES
+================================================================================
+
+✅ BÚSQUEDA INTELIGENTE
+   - Algoritmo de similitud Jaccard
+   - Búsqueda en múltiples campos:
+     * Título
+     * Contenido
+     * Tags
+     * Categorías
+     * Nombres de presentadores
+     * Nombres de miembros del equipo
+     * Nombre de jornada
+
+✅ SISTEMA DE FILTROS
+   - Por jornada (1, 2, 3)
+   - Por categoría (10 categorías):
+     * IA y ML
+     * Web
+     * Móvil
+     * IoT/Hardware
+     * Juegos
+     * Cloud/DevOps
+     * Seguridad
+     * Datos/BI
+     * UX/UI
+     * Otros
+   - Límite de resultados (4, 8, 12, todos)
+
+✅ DISEÑO RESPONSIVE
+   - Layout adaptable a diferentes pantallas
+   - Grid de tarjetas flexible
+   - Panel de filtros colapsable en móvil
+   - Max-width: 1440px en desktop
+
+✅ TEMA OSCURO
+   - Paleta de colores moderna
+   - Alto contraste para legibilidad
+   - Gradientes y efectos visuales
+
+✅ IMÁGENES OPTIMIZADAS
+   - Formato WebP (mejor compresión)
+   - Lazy loading implementable
+   - Galería en vista de detalle
+
+
+================================================================================
+7. BASE DE DATOS (JSON)
+================================================================================
+
+DATABASE/NEWS.JSON
+Estructura de cada noticia:
+{
+  "id": "1",
+  "title": "Título del proyecto",
+  "summary": "Resumen breve",
+  "content": "Descripción detallada del proyecto",
+  "images": ["/images/foto.webp"],
+  "date": "2025-10-28",
+  "presenters": ["Equipo VIZLA"],
+  "details": "Jornada X - Contexto adicional",
+  "tags": ["tag1", "tag2", "tag3"]
+}
+
+Total de noticias: 27
+- Jornada 1 (The Nexus Battles IV): 12 proyectos
+- Jornada 2 (Estructura de Datos): 5 proyectos
+- Jornada 3 (Proyectos Integradores): 10 proyectos
+
+DATABASE/TEAM-MEMBERS.JSON
+Estructura:
+{
+  "Equipo VIZLA": [
+    "522709 - Aguilar Latorre Daniel Felipe",
+    "504755 - Bravo Vergara Pablo Antonio",
+    ...
+  ],
+  ...
+}
+
+Total de equipos: 27 equipos con información completa
+
+
+================================================================================
+8. TESTING (52 TESTS PASANDO)
+================================================================================
+
+UNIT TESTS (30 tests)
+├── Layout.test.ts (5 tests)
+│   - Escape HTML correcto
+│   - Generación de <head>
+│   - Footer completo
+│   - Links de menú
+│   - Marca UPB
+│
+├── TemplateError.test.ts (5 tests)
+│   - Título 404
+│   - Título 500
+│   - Botones de acción
+│   - SVG decorativo
+│   - Escape de mensajes
+│
+├── TemplateHome.test.ts (5 tests)
+│   - Título hero
+│   - Mención de Jornada 2025-II
+│   - Link a noticias
+│   - Link a registro
+│   - Sección de características
+│
+├── TemplateNews.test.ts (5 tests)
+│   - Renderizado de lista
+│   - Tarjetas de noticias
+│   - Paginación
+│   - Hero de detalle
+│   - Tags y miembros
+│
+├── NewsRoutes.more.test.ts (5 tests)
+│   - Búsqueda por presentador
+│   - Filtro de jornada
+│   - Límite de resultados
+│   - Filtro de categoría
+│   - Label de expositor
+│
+└── ErrorRoutes.test.ts (5 tests)
+    - Status 404
+    - Título en español
+    - CTA a home
+    - Estructura card/SVG
+    - Botón regresar
+
+E2E TESTS (10 tests)
+├── home.e2e.test.ts (2 tests)
+├── filters.e2e.test.ts (3 tests)
+├── detail.e2e.test.ts (2 tests)
+├── static.e2e.test.ts (2 tests)
+└── error.e2e.test.ts (1 test)
+
+INTEGRATION TESTS (12 tests adicionales)
+- Validación de rutas completas
+- Interacción entre componentes
+- Manejo de casos edge
+
+
+================================================================================
+9. COMANDOS IMPORTANTES
+================================================================================
+
+DESARROLLO:
+npm run dev          # Ejecutar servidor en modo desarrollo
+                     # Puerto: 3000
+                     # Hot-reload automático con ts-node-dev
+
+PRODUCCIÓN:
+npm run build        # Compilar TypeScript a JavaScript (/build)
+npm start            # Ejecutar versión compilada
+
+TESTING:
+npm test             # Ejecutar todos los tests (52)
+npm run test:watch   # Tests en modo watch
+npm run test:coverage # Cobertura de código
+
+GIT:
+git add .
+git commit -m "mensaje"
+git push origin main
+
+
+================================================================================
+10. PUNTOS CLAVE PARA LA EXPOSICIÓN
+================================================================================
+
+1. ARQUITECTURA MVT
+   "Utilizamos el patrón MVT que separa responsabilidades:
+    - Model maneja los datos
+    - View controla la lógica
+    - Template genera el HTML
+    Esta separación facilita mantenimiento y testing"
+
+2. BÚSQUEDA INTELIGENTE
+   "Implementamos búsqueda con algoritmo Jaccard que:
+    - Calcula similitud entre términos
+    - Busca en múltiples campos
+    - Prioriza coincidencias exactas
+    - Rankea resultados por relevancia"
+
+3. SISTEMA DE FILTROS
+   "El usuario puede filtrar por:
+    - Jornada (1, 2 o 3)
+    - 10 categorías técnicas
+    - Límite de resultados
+    Todos los filtros son combinables"
+
+4. TESTING ROBUSTO
+   "52 tests garantizan calidad:
+    - 30 tests unitarios (componentes aislados)
+    - 10 tests E2E (flujos completos)
+    - 12 tests de integración
+    Cobertura completa del código crítico"
+
+5. DISEÑO RESPONSIVE
+   "La interfaz se adapta a cualquier dispositivo:
+    - Desktop: layout 1440px con filtros laterales
+    - Tablet: filtros colapsables
+    - Móvil: navegación optimizada
+    Tema oscuro para mejor experiencia"
+
+6. OPTIMIZACIÓN
+   "Implementamos buenas prácticas:
+    - Imágenes WebP (mejor compresión)
+    - TypeScript (type safety)
+    - Código modular y reutilizable
+    - Separación de responsabilidades"
+
+7. DATOS REALES
+   "27 proyectos documentados de 3 jornadas:
+    - 12 de The Nexus Battles IV
+    - 5 de Estructura de Datos
+    - 10 de Proyectos Integradores
+    Con información completa de equipos"
+
+
+================================================================================
+11. DEMOSTRACIÓN PRÁCTICA
+================================================================================
+
+ESCENARIO 1: Búsqueda simple
+URL: http://localhost:3000/news?search=IA
+Resultado: Muestra proyectos relacionados con IA
+
+ESCENARIO 2: Filtro combinado
+URL: http://localhost:3000/news?jornada=1&category=Web
+Resultado: Proyectos web de la Jornada 1
+
+ESCENARIO 3: Búsqueda por expositor
+URL: http://localhost:3000/news?search=VIZLA
+Resultado: Proyecto del equipo VIZLA
+
+ESCENARIO 4: Detalle de proyecto
+URL: http://localhost:3000/news/1
+Resultado: Vista detallada con galería e integrantes
+
+ESCENARIO 5: Página de error
+URL: http://localhost:3000/noexiste
+Resultado: Página 404 personalizada en español
+
+
+================================================================================
+12. TECNOLOGÍAS UTILIZADAS
+================================================================================
+
+BACKEND:
+- Node.js v20+
+- Express 5.1.0 (framework web)
+- TypeScript 5.9.3 (type safety)
+
+TESTING:
+- Jest 30.2.0 (framework de testing)
+- ts-jest (transformador TypeScript)
+- supertest 7.1.4 (testing HTTP)
+
+BUILD:
+- ts-node-dev (desarrollo)
+- tsc (compilador TypeScript)
+- rimraf (limpieza de builds)
+
+OTROS:
+- ESM modules (import/export)
+- JSON como base de datos
+- Template literals para HTML
+
+
+================================================================================
+13. VENTAJAS DEL ENFOQUE MVT
+================================================================================
+
+✅ SEPARACIÓN DE RESPONSABILIDADES
+   Cada componente tiene una función específica
+
+✅ FACILITA EL TESTING
+   Podemos probar Model, View y Template independientemente
+
+✅ CÓDIGO REUTILIZABLE
+   Los templates se pueden usar desde diferentes vistas
+
+✅ MANTENIMIENTO SIMPLE
+   Cambios en datos no afectan la presentación
+
+✅ ESCALABILIDAD
+   Fácil agregar nuevos módulos (productos, usuarios, etc.)
+
+
+================================================================================
+14. POSIBLES MEJORAS FUTURAS
+================================================================================
+
+🔹 Migrar a base de datos real (PostgreSQL, MongoDB)
+🔹 Agregar autenticación de usuarios
+🔹 Implementar sistema de comentarios
+🔹 Panel de administración para crear/editar noticias
+🔹 Sistema de favoritos
+🔹 Compartir en redes sociales
+🔹 RSS Feed
+🔹 PWA (Progressive Web App)
+🔹 Deploy en Vercel/Railway/Render
+🔹 CI/CD con GitHub Actions
+
+
+================================================================================
+15. ENLACES IMPORTANTES
+================================================================================
+
+Repositorio GitHub:
+https://github.com/marco344444/Parcial2WEB
+
+Estructura de archivos:
+Ver sección 3 de este documento
+
+Documentación TypeScript:
+https://www.typescriptlang.org/docs/
+
+Documentación Express:
+https://expressjs.com/
+
+
+================================================================================
+FIN DE LA DOCUMENTACIÓN
+================================================================================
+
+Para cualquier duda durante la exposición, revisar:
+1. Esta documentación (visión general)
+2. Comentarios en el código fuente
+3. Tests como ejemplos de uso
+4. README.md del repositorio
+
+¡Éxito en la exposición! 🚀
